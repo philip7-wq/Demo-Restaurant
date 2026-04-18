@@ -1231,6 +1231,8 @@ p {
 .form-row select,
 .form-row textarea {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 0.75rem 1rem;
   background-color: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(242, 238, 230, 0.2);
@@ -1650,9 +1652,32 @@ p {
    Contact Page
    ========================================================================== */
 
-.contact-layout {
+.contact-layout,
+.reservierung-layout {
   display: grid;
   gap: var(--space-6);
+}
+
+.reservierung-form-panel {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.reservierung-form-panel h2 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-4);
+}
+
+.reservierung-form-panel h2 em {
+  font-style: italic;
+}
+
+.contact-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
 }
 
 .contact-info__group {
@@ -1718,7 +1743,8 @@ p {
 }
 
 @media (min-width: 1024px) {
-  .contact-layout {
+  .contact-layout,
+  .reservierung-layout {
     grid-template-columns: 5fr 7fr;
     align-items: start;
   }
