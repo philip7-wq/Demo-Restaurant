@@ -13,7 +13,7 @@ Tel: +49 911 45678910
 Tel Reservierung: +49 911 45678911
 E-Mail: info@casa-fiora-demo.de
 E-Mail Reservierung: reservierung@casa-fiora-demo.de
-Web: https://www.casa-fiora-demo.de
+Web: https://demorestaurant12.netlify.app
 
 ## Öffnungszeiten
 Montag: Geschlossen
@@ -32,7 +32,7 @@ Sonntag: 12:00–21:30 Uhr
 - Private Feiern und Firmenevents möglich
 
 ## Wichtige Seiten
-- https://www.casa-fiora-demo.de/speisekarte.html
-- https://www.casa-fiora-demo.de/reservierung.html
-- https://www.casa-fiora-demo.de/about.html
-- https://www.casa-fiora-demo.de/galerie.html
+- https://demorestaurant12.netlify.app/speisekarte.html
+- https://demorestaurant12.netlify.app/reservierung.html
+- https://demorestaurant12.netlify.app/about.html
+- https://demorestaurant12.netlify.app/galerie.html

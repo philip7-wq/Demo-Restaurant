@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.casa-fiora-demo.de/sitemap.xml
+Sitemap: https://demorestaurant12.netlify.app/sitemap.xml
