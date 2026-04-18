@@ -597,6 +597,63 @@ p {
   justify-content: center;
 }
 
+@keyframes deco-slide-left {
+  from {
+    transform: translateX(-140%) rotate(-35deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes deco-slide-right {
+  from {
+    transform: translateX(140%) rotate(35deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.hero__deco {
+  position: absolute;
+  bottom: -22%;
+  width: clamp(380px, 38vw, 660px);
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+.hero__deco--left {
+  left: -10%;
+  animation: deco-slide-left 1.6s cubic-bezier(0.22, 1, 0.36, 1) 1s both;
+}
+
+.hero__deco--right {
+  right: -10%;
+  animation: deco-slide-right 1.6s cubic-bezier(0.22, 1, 0.36, 1) 1s both;
+}
+
+@media (max-width: 768px) {
+  .hero__deco {
+    width: clamp(200px, 48vw, 300px);
+    bottom: -12%;
+    opacity: 0.85;
+  }
+
+  .hero__deco--left {
+    left: -8%;
+  }
+
+  .hero__deco--right {
+    right: -8%;
+  }
+}
+
 /* ==========================================================================
    Section Base
    ========================================================================== */
