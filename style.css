@@ -1311,6 +1311,8 @@ p {
   gap: var(--space-2);
   font-size: 0.875rem;
   color: rgba(242, 238, 230, 0.65);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .form-checkbox.dark {
@@ -1925,6 +1927,7 @@ p {
 @media (max-width: 767px) {
   .hide-on-mobile { display: none !important; }
   .form-row--half { grid-template-columns: 1fr; }
+  .cta-section__form-panel { padding: var(--space-3); }
 }
 
 /* ==========================================================================
