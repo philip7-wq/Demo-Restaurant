@@ -25,6 +25,9 @@
   <link rel="preload" href="/assets/fonts/newsreader-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/plus-jakarta-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
+
+  <script src="/client.config.js"></script>
+  <script src="/client-init.js"></script>
 </head>
 <body>
 
@@ -34,8 +37,8 @@
   <header class="site-header is-transparent" id="site-header">
     <div class="container">
       <a href="/" class="site-logo" aria-label="Casa Fiora – Startseite">
-        <img src="/assets/logo/logo.svg" alt="Casa Fiora" width="180" height="44" class="logo-light">
-        <img src="/assets/logo/logo-dark.svg" alt="Casa Fiora" width="180" height="44" class="logo-dark">
+        <img src="/assets/logo/logo.svg" alt="Casa Fiora" width="180" height="44" class="logo-light" data-client="logo">
+        <img src="/assets/logo/logo-dark.svg" alt="Casa Fiora" width="180" height="44" class="logo-dark" data-client="logo-dark">
       </a>
       <nav class="site-nav" aria-label="Hauptnavigation">
         <ul id="main-menu" class="nav-list" role="list">
@@ -92,7 +95,7 @@
             </picture>
           </div>
           <div class="split__text">
-            <p class="eyebrow section__eyebrow">Marco Fiora</p>
+            <p class="eyebrow section__eyebrow" data-client="founder">Marco Fiora</p>
             <h2 class="split__headline" id="marco-heading">Küchenchef &amp;<br><em>Gastgeber</em></h2>
             <p class="split__body">
               Marco Fiora bringt mehr als 15 Jahre Erfahrung in der Gastronomie mit. Aufgewachsen in einer italienischstämmigen Familie im Münchner Umland, lernte er früh, dass gutes Essen Zeit braucht – und Liebe.
@@ -196,7 +199,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <a href="/" aria-label="Casa Fiora – Startseite" class="footer-logo">
-            <img src="/assets/logo/logo-dark.svg" alt="Casa Fiora" width="180" height="44">
+            <img src="/assets/logo/logo-dark.svg" alt="Casa Fiora" width="180" height="44" data-client="logo-dark">
           </a>
           <p class="footer-tagline">Mediterrane Küche mit ehrlichem Handwerk. Adlerstraße 22, Nürnberg.</p>
         </div>
@@ -213,15 +216,15 @@
         <div class="footer-contact">
           <p class="footer-nav__title">Kontakt</p>
           <p>
-            Adlerstraße 22<br>
-            90403 Nürnberg<br>
-            <a href="tel:+4991145678910">0911 45678910</a><br>
-            <a href="mailto:info@casa-fiora-demo.de">info@casa-fiora-demo.de</a>
+            <span data-client="street">Adlerstraße 22</span><br>
+            <span data-client="city">90403 Nürnberg</span><br>
+            <a href="tel:+4991145678910" data-client="phone" data-client-href="phone">0911 45678910</a><br>
+            <a href="mailto:info@casa-fiora-demo.de" data-client="email" data-client-href="email">info@casa-fiora-demo.de</a>
           </p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copyright">&copy; 2026 Casa Fiora. Alle Rechte vorbehalten.</p>
+        <p class="footer-copyright">&copy; 2026 <span data-client="name">Casa Fiora</span>. Alle Rechte vorbehalten.</p>
         <nav class="footer-legal" aria-label="Rechtliches">
           <a href="/impressum.html">Impressum</a>
           <a href="/datenschutz.html">Datenschutz</a>
